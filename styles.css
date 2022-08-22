@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+table caption {
+  text-align: left;
+}
+caption {
+  font-size: 30px;
+  color: rgb(39, 123, 120);
+  margin-bottom: 30px;
+}
+
+table {
+  border-collapse: separate;
+  /* Стилизация самиз рамок таблицы может быть еще collapse */
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 2px solid rgb(153, 51, 92);
+}
+
+table td:hover {
+  background-color: tomato;
+}
+
+.link {
+  border-bottom: auto;
+  color: rgba(37, 137, 21, 0.484);
+}
+
+.link:hover {
+  color: blue;
+}
