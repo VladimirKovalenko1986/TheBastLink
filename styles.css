@@ -3,6 +3,14 @@ body {
   text-align: center;
 }
 
+.navigation {
+  text-align: left;
+}
+
+.navigation:hover {
+  color: blueviolet;
+}
+
 table caption {
   text-align: left;
 }
