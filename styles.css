@@ -19,11 +19,13 @@ body {
 }
 
 caption {
-  color: rgb(39, 123, 120);
+  color: white;
+  background-color: blue;
 
   font-size: 30px;
   margin-bottom: 30px;
   text-align: left;
+  border-radius: 10px;
 }
 
 .tabel {
