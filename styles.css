@@ -7,40 +7,48 @@ body {
   text-align: left;
 }
 
-.navigation:hover {
-  color: blueviolet;
+.list-link a {
+  color: brown;
+
+  text-decoration: none;
 }
 
-table caption {
+.list-link a:hover,
+.list-link a:focus {
+  color: darkorchid;
+}
+
+caption {
+  color: rgb(39, 123, 120);
+
+  font-size: 30px;
+  margin-bottom: 30px;
   text-align: left;
 }
-caption {
-  font-size: 30px;
-  color: rgb(39, 123, 120);
-  margin-bottom: 30px;
-}
 
-table {
+.tabel {
   border-collapse: collapse;
   /* Стилизация самиз рамок таблицы может быть еще collapse */
-  border: 2px solid rgb(153, 51, 92);
+  /* border: 2px solid rgb(153, 51, 92); */
 }
 
-th,
-td {
-  padding: 10px;
+.tabel th,
+.tabel td {
   border: 2px solid rgb(153, 51, 92);
+  padding: 8px;
 }
 
-table td:hover {
+.tabel-body > tr:hover {
   background-color: tomato;
 }
 
 .link {
   border-bottom: auto;
   color: rgba(37, 137, 21, 0.484);
+  text-decoration: none;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
   color: blue;
 }
