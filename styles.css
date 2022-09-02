@@ -54,3 +54,7 @@ caption {
 .link:focus {
   color: blue;
 }
+
+.list {
+  text-decoration: none;
+}
