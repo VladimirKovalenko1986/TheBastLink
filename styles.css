@@ -7,20 +7,35 @@ body {
   text-align: left;
 }
 
+.list-header {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.list-link:not(:first-child) {
+  margin-left: 30px;
+}
+
 .list-link a {
   color: brown;
+  border: 2px solid teal;
+  border-radius: 5px;
+  padding: 10px 15px;
 
   text-decoration: none;
 }
 
 .list-link a:hover,
 .list-link a:focus {
-  color: darkorchid;
+  color: white;
+  background-color: blue;
 }
 
 caption {
+  padding: 10px;
+
   color: white;
-  background-color: blue;
+  background-color: turquoise;
 
   width: 600px;
   font-size: 30px;
