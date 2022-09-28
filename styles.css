@@ -1,6 +1,30 @@
+.linkheader {
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  color: #2f4f4f;
+  background-color: red;
+  border: 2px solid white;
+  overflow: hidden;
+  padding: 10px 20px;
+  margin: 0;
+
+  border-radius: 5px;
+}
+
+.linkheader:hover {
+  color: white;
+  background-color: tomato;
+}
+
 body {
   font-family: sans-serif;
   text-align: center;
+
+  background-image: url("./ukraine.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 header {
@@ -19,56 +43,54 @@ header {
   margin-left: 30px;
 }
 
-.list-item {
+.icon-before1 {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  display: block;
+
+  fill: yellowgreen;
+
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.list-link {
-  position: relative;
-  display: inline-flex;
-  color: brown;
-  border: 2px solid teal;
-  overflow: hidden;
-  padding: 10px 20px;
-  margin: 0;
-
-  border-radius: 5px;
-
-  align-items: baseline;
-  text-decoration: none;
+.list-link-home:hover .icon-before1 {
+  transform: translateY(calc(-50% - 30px));
 }
 
-.list-link:hover,
-.list-item .list-link:focus {
-  color: white;
-  background-color: blue;
+.icon-before2 {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  display: block;
+
+  fill: white;
+
+  transform: translateY(calc(50% + 20px));
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.list-item:hover .icon-before {
-  transform: translateY(-30px);
+.list-link-home:hover .icon-before2 {
+  transform: translateY(-50%);
 }
 
-.list-link .icon-before,
-.list-link .icon-before1 {
-  margin-right: 5px;
+.list-link-video {
+  z-index: 2;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.list-link-video:hover {
+  transform: scale(1.5);
+}
+
+.list-link-pen {
   transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.list-link .icon-before1 {
-  position: absolute;
-  display: inline-block;
-  left: 18px;
-
-  transform: translateY(30px);
-}
-
-.list-item:hover .icon-before1 {
-  transform: translateY(0);
-  fill: white;
-}
-
-.icon-before,
-.icon-before1 {
-  fill: tomato;
+.list-link-pen:hover {
+  transform: rotate(90deg);
 }
 
 caption {
@@ -92,7 +114,7 @@ caption {
 
 .tabel th,
 .tabel td {
-  border: 2px solid rgb(153, 51, 92);
+  border: 2px solid white;
   padding: 8px;
 }
 
@@ -102,7 +124,7 @@ caption {
 
 .link {
   border-bottom: auto;
-  color: rgba(37, 137, 21, 0.484);
+  color: black;
   text-decoration: none;
 }
 
