@@ -21,10 +21,11 @@ body {
   font-family: sans-serif;
   text-align: center;
 
-  background-image: url("./ukraine.jpg");
+  background: turquoise;
+  /* background-image: url("./ukraine.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
 header {
@@ -124,7 +125,7 @@ caption {
 
 .link {
   border-bottom: auto;
-  color: black;
+  color: teal;
   text-decoration: none;
 }
 
