@@ -32,10 +32,6 @@ picture {
   height: auto;
 }
 
-header {
-  padding: 30px 0 40px 0;
-}
-
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -58,15 +54,23 @@ header {
   }
 }
 
+.centered {
+  text-align: center;
+}
+
 .navigation__list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.navigation__item {
+  padding: 40px 0;
+}
 .navigation__item:not(:first-child) {
   margin-left: 30px;
 }
 .navigation__link {
+  position: relative;
   overflow: hidden;
   display: inline-block;
   padding: 10px 20px;
@@ -77,22 +81,20 @@ header {
   letter-spacing: 0.03em;
   color: #272c34;
   background-color: #206a97;
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, background-color 250ms linear;
 }
 .navigation__link:hover, .navigation__link:focus {
   background-color: #fa8072;
+  transition: transform 250ms linear, background-color 250ms linear;
 }
-.navigation__link--positionsvg {
-  position: relative;
+.navigation__link--scale {
+  z-index: 99;
 }
 .navigation__link--scale:hover, .navigation__link--scale:focus {
   transform: scale(1.5);
 }
 .navigation__link--rotate:hover, .navigation__link--rotate:focus {
   transform: rotateX(45deg);
-}
-.navigation__link--line {
-  position: relative;
 }
 .navigation__link--line::before {
   position: absolute;
@@ -131,4 +133,56 @@ header {
 .navigation__link--positionsvg:hover .navigation__svgmovingdown,
 .navigation__link--positionsvg:focus .navigation__svgmovingdown {
   transform: translateY(40px);
+}
+
+.current {
+  background-color: #ff1493;
+}
+
+.hero {
+  padding: 40px 0;
+}
+
+.tabel {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tabel__title {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #d2691e;
+}
+.tabel__title--moving-bottom {
+  margin-bottom: 30px;
+}
+.tabel__item {
+  max-width: 400px;
+}
+.tabel__item--primery {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.tabel__item--secondary {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.tabel__link:hover, .tabel__link:focus {
+  color: #ff00ff;
+}
+
+.tabel__item--primery,
+.tabel__item--secondary {
+  border: 2px solid #00bfff;
+  padding: 10px;
+}
+
+.project:not(:last-child) {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */

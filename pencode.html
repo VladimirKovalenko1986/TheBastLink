@@ -5,194 +5,283 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The bast link</title>
-     <link rel="stylesheet" href="./styles.css" />
-     <link rel="shortcut icon" type="image-jpg" href="/icon-the-best-link.jpg" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="shortcut icon" type="image-jpg" href="/icon-the-best-link.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
   </head>
   <body>
+    <!-- Header -->
+
     <header>
-      <nav class="navigation">
-        <ul class="list-header list">
-          <li class="list-item"><a href="./index.html" class="list-link-home linkheader"><svg width="15" height="15" class="icon-before1">
-                <use xlink:href="./price.svg#icon-before1"></use>
-              </svg>Home<svg width="15" height="15" class="icon-before2">
-                <use xlink:href="./price.svg#icon-before2"></use>
-              </svg></a></li>
-          <li class="list-item">
-            <a href="./video.html" class="list-link-video linkheader">Instructional video</a>
-          </li>
-          <li class="list-item"><a href="./pencode.html" class="list-link-pen linkheader">Pen Code</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a
+                href="./index.html"
+                class="navigation__link navigation__link--positionsvg"
+                ><svg width="15" height="15" class="navigation__svgmovingup">
+                  <use xlink:href="./price.svg#icon-before1"></use>
+                </svg>
+                Home
+                <svg width="15" height="15" class="navigation__svgmovingdown">
+                  <use xlink:href="./price.svg#icon-before2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a
+                href="./video.html"
+                class="navigation__link navigation__link--scale"
+                >Instructional video</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a
+                href="./pencode.html"
+                class="navigation__link navigation__link--rotate current"
+                >Pen Code</a
+              >
+            </li>
+
+            <li class="navigation__item">
+              <a
+                href="./projects.html"
+                class="navigation__link navigation__link--line"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-     <main>
-      <table class="tabel">
-        <caption>
-          Приклади code paine
-        </caption>
-        <thead class="tabel-head">
-          <tr class="table-tags">
-            <th class="table-list">№ п/п</th>
-            <th class="table-list">Посилання</th>
-            <th class="table-list">Найменування</th>
-          </tr>
-        </thead>
-        <tbody class="tabel-body">
-          <tr class="table-tags">
-            <td class="table-list">1</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/qBYZPPr?editors=1100" rel="noopener norefferer nofollow"
-                >Flex conteiner</a
-              >
-            </td>
-            <td class="table-list">Flex conteiner</td>
-          </tr>
-          <tr class="table-tags">
-            <td class="table-list">2</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/YzLZLPr?editors=1100" rel="noopener norefferer nofollow"
-                >Накладення фото на інше</a
-              >
-            </td>
-            <td class="table-list">Накладення фото на інше</td>
-          </tr>
-          <tr class="table-tags">
-            <td class="table-list">3</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/PoQgdGM?editors=1100" rel="noopener norefferer nofollow"
-                >Shadow-text</a
-              >
-            </td>
-            <td class="table-list">Shadow-text</td>
-          </tr>
-          <tr class="table-tags">
-            <td class="table-list">4</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/QWrpENr?editors=1100" rel="noopener norefferer nofollow"
-                >Вирівнювання іконкі з силкою по вертікалі </a
-              >
-            </td>
-            <td class="table-list">Вирівнювання іконкі з силкою по вертікалі</td>
-          </tr>
-          <tr class="table-tags">
-          <td class="table-list">5</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/oNzQoZb?editors=1100" rel="noopener norefferer nofollow"
-                >Приклад зі зміною розташуванням елементів border </a
-              >
-            </td>
-            <td class="table-list">Приклад зі зміною розташуванням елементів border</td>
-          </tr>
-          <tr class="table-tags">
-          <td class="table-list">5</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/KittyGiraudel/pen/nLRpaY" rel="noopener norefferer nofollow"
-                >Flex conteiner</a
-              >
-            </td>
-            <td class="table-list">Flex conteiner</td>
-          </tr>
-          <tr class="table-tags">
-          <td class="table-list">6</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/PoebBVX?editors=1100" rel="noopener norefferer nofollow"
-                >Розташування малюнка з бордером</a
-              >
-            </td>
-            <td class="table-list">Розташування малюнка з бордером</td>
-          </tr>
-          <tr class="table-tags">
-          <td class="table-list">7</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/vYjyaqa?editors=1100" rel="noopener norefferer nofollow"
-                >hover з зислкою та іконкою</a
-              >
-            </td>
-            <td class="table-list">hover з сислкою та іконкою</td>
-          </tr>
-          <tr class="table-tags">
-          <td class="table-list">8</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/JjvWPKm?editors=1100" rel="noopener norefferer nofollow"
-                >Прапор України</a
-              >
-            </td>
-            <td class="table-list">Прапор України</td>
-          </tr>
-          <tr class="table-tags">
-          <td class="table-list">9</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/JjvvMoE?editors=1100" rel="noopener norefferer nofollow"
-                >Change placeholder color on input focus</a
-              >
-            </td>
-            <td class="table-list">Зміна фокусу input and plasholder</td>
-          </tr>
-          <tr class="table-tags">
-          <td class="table-list">10</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/eYreJEL" rel="noopener norefferer nofollow"
-                >modal GoIT</a
-              >
-            </td>
-            <td class="table-list">створення Modal вікна</td>
-          </tr>
-          <tr class="table-tags">
-          <td class="table-list">11</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/JjbErPB?editors=1100" rel="noopener norefferer nofollow"
-                >CodePen Home CSS Heart Animation</a
-              >
-            </td>
-            <td class="table-list">Анімація Heart</td>
-          </tr>
-          <tr class="table-tags">
-          <td class="table-list">12</td>
-            <td class="table-list">
-              <a
-                class="link"
-                target="_blank"
-                href="https://codepen.io/mpadalko/pen/GRWEWMZ?editors=1100" rel="noopener norefferer nofollow"
-                >social rotate</a
-              >
-            </td>
-            <td class="table-list">Анімація іконок соціальних джерел</td>
-          </tr>
-      </main>
+
+    <!-- Main -->
+
+    <main>
+      <!-- Hero -->
+
+      <section class="hero">
+        <div class="container">
+          <table class="tabel">
+            <caption class="tabel__title tabel__title--moving-bottom">
+              Приклади code paine
+            </caption>
+
+            <thead class="tabel__head">
+              <tr class="tabel__list tabel__list--primery">
+                <th class="tabel__item tabel__item--primery">№ п/п</th>
+                <th class="tabel__item tabel__item--primery">Посилання</th>
+                <th class="tabel__item tabel__item--primery">Найменування</th>
+              </tr>
+            </thead>
+
+            <tbody class="tabel__main">
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">1</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/qBYZPPr?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >Flex conteiner</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Flex conteiner
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">2</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/YzLZLPr?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >Накладення фото на інше</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Накладення фото на інше
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">3</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/PoQgdGM?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >Shadow-text</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">Shadow-text</td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">4</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/QWrpENr?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >Вирівнювання іконкі з силкою по вертікалі
+                  </a>
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Вирівнювання іконкі з силкою по вертікалі
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">5</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/oNzQoZb?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >Приклад зі зміною розташуванням елементів border
+                  </a>
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Приклад зі зміною розташуванням елементів border
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">5</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/KittyGiraudel/pen/nLRpaY"
+                    rel="noopener norefferer nofollow"
+                    >Flex conteiner</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Flex conteiner
+                </td>
+              </tr>
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">6</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/PoebBVX?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >Розташування малюнка з бордером</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Розташування малюнка з бордером
+                </td>
+              </tr>
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">7</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/vYjyaqa?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >hover з зислкою та іконкою</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  hover з сислкою та іконкою
+                </td>
+              </tr>
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">8</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/JjvWPKm?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >Прапор України</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Прапор України
+                </td>
+              </tr>
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">9</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/JjvvMoE?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >Change placeholder color on input focus</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Зміна фокусу input and plasholder
+                </td>
+              </tr>
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">10</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/eYreJEL"
+                    rel="noopener norefferer nofollow"
+                    >modal GoIT</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  створення Modal вікна
+                </td>
+              </tr>
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">11</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/JjbErPB?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >CodePen Home CSS Heart Animation</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Анімація Heart
+                </td>
+              </tr>
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">12</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://codepen.io/mpadalko/pen/GRWEWMZ?editors=1100"
+                    rel="noopener norefferer nofollow"
+                    >social rotate</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Анімація іконок соціальних джерел
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

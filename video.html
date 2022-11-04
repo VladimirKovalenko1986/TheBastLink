@@ -5,183 +5,244 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The bast link</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="shortcut icon" type="image-jpg" href="/icon-the-best-link.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
   </head>
   <body>
+    <!-- Header -->
+
     <header>
-      <nav class="navigation">
-        <ul class="list-header list">
-          <li class="list-item">
-            <a href="./index.html" class="list-link-home linkheader"
-              ><svg width="15" height="15" class="icon-before1">
-                <use xlink:href="./price.svg#icon-before1"></use>
-              </svg>
-              Home<svg width="15" height="15" class="icon-before2">
-                <use xlink:href="./price.svg#icon-before2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="./video.html" class="list-link-video linkheader"
-              >Instructional video</a
-            >
-          </li>
-          <li class="list-item">
-            <a href="./pencode.html" class="list-link-pen linkheader"
-              >Pen Code</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a
+                href="./index.html"
+                class="navigation__link navigation__link--positionsvg"
+                ><svg width="15" height="15" class="navigation__svgmovingup">
+                  <use xlink:href="./price.svg#icon-before1"></use>
+                </svg>
+                Home
+                <svg width="15" height="15" class="navigation__svgmovingdown">
+                  <use xlink:href="./price.svg#icon-before2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a
+                href="./video.html"
+                class="navigation__link navigation__link--scale current"
+                >Instructional video</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a
+                href="./pencode.html"
+                class="navigation__link navigation__link--rotate"
+                >Pen Code</a
+              >
+            </li>
+
+            <li class="navigation__item">
+              <a
+                href="./projects.html"
+                class="navigation__link navigation__link--line"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <!-- Main-->
+
     <main>
-      <table class="tabel">
-        <caption>
-          Всі навчальні відео за курсом
-        </caption>
-        <thead>
-          <tr>
-            <th>№ п/п</th>
-            <th>Посилання</th>
-            <th>Найменування</th>
-          </tr>
-        </thead>
-        <tbody class="tabel-body">
-          <tr>
-            <td>1</td>
-            <td>
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=KIunqi08-G4"
-                rel="noopener norefferer nofollow"
-                >Лекція 0. HTML та CSS. Частина 1</a
-              >
-            </td>
-            <td>Лекція HTML та CSS 1 part</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=1wXFcr71pqs"
-                rel="noopener norefferer nofollow"
-                >Лекція 0. HTML та CSS. Частина 2</a
-              >
-            </td>
-            <td>Лекція HTML та CSS 2 part</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=k6IxRD5BEXY"
-                rel="noopener norefferer nofollow"
-                >Модуль 1. Вебинар 1. Основы HTML часть 1</a
-              >
-            </td>
-            <td>Модуль 1. Вебинар 1. Основы HTML часть 1 Александр</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=lKAVnNi9ZCM"
-                rel="noopener norefferer nofollow"
-                >Модуль 1. Вебинар №2. Основы HTML часть 2</a
-              >
-            </td>
-            <td>Модуль 1. Вебинар №2. Основы HTML часть 2 Александр</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=hi4Sb-_Ud0U"
-                rel="noopener norefferer nofollow"
-                >[FSON #66] Модуль 1 Заняття 1</a
-              >
-            </td>
-            <td>GO-IT 1 lessons (HTML)</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=B4i-IGwjaI8s"
-                rel="noopener norefferer nofollow"
-                >[FSon #66] Модуль 1 Заняття 2</a
-              >
-            </td>
-            <td>GO-IT 2 lessons (HTML)</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=bn9yIxt_rtg"
-                rel="noopener norefferer nofollow"
-                >Модуль 2. Вебинар №3. Основы CSS. Селекторы. Цвет.</a
-              >
-            </td>
-            <td>
-              Модуль 2. Вебинар №3. Основы CSS. Селекторы. Цвет. Александр
-            </td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=KM5r3qtBdxY"
-                rel="noopener norefferer nofollow"
-                >Модуль 2. Вебинар №4. Оформление текста и шрифты</a
-              >
-            </td>
-            <td>Модуль 2. Вебинар №4. Оформление текста и шрифты Александр</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=KHCnpp7RSfY"
-                rel="noopener norefferer nofollow"
-                >Розбір Макету Barbershop (стилі Текст)</a
-              >
-            </td>
-            <td>Розбір Макету Barbershop (стилі Текст)</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>
-              <a
-                class="link"
-                target="_blank"
-                href="https://www.youtube.com/watch?v=EVVRPExVA68&t=1s"
-                rel="noopener norefferer nofollow"
-                >Розбір Макету Barbershop (About, Prices, Benefits)</a
-              >
-            </td>
-            <td>Розбір Макету Barbershop (About, Prices, Benefits)</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- Hero -->
+
+      <section class="hero">
+        <div class="container">
+          <table class="tabel">
+            <caption class="tabel__title tabel__title--moving-bottom">
+              Всі навчальні відео за курсом HTML, CSS, SCSS
+            </caption>
+
+            <thead class="tabel__head">
+              <tr class="tabel__list tabel__list--primery">
+                <th class="tabel__item tabel__item--primery">№ п/п</th>
+                <th class="tabel__item tabel__item--primery">Посилання</th>
+                <th class="tabel__item tabel__item--primery">Найменування</th>
+              </tr>
+            </thead>
+
+            <tbody class="tabel__main">
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">1</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=KIunqi08-G4"
+                    rel="noopener norefferer nofollow"
+                    >Лекція 0. HTML та CSS. Частина 1</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Лекція HTML та CSS 1 part
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">2</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=1wXFcr71pqs"
+                    rel="noopener norefferer nofollow"
+                    >Лекція 0. HTML та CSS. Частина 2</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Лекція HTML та CSS 2 part
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">3</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=k6IxRD5BEXY"
+                    rel="noopener norefferer nofollow"
+                    >Модуль 1. Вебинар 1. Основы HTML часть 1</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Модуль 1. Вебинар 1. Основы HTML часть 1 Александр
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">4</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=lKAVnNi9ZCM"
+                    rel="noopener norefferer nofollow"
+                    >Модуль 1. Вебинар №2. Основы HTML часть 2</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Модуль 1. Вебинар №2. Основы HTML часть 2 Александр
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">5</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=hi4Sb-_Ud0U"
+                    rel="noopener norefferer nofollow"
+                    >[FSON #66] Модуль 1 Заняття 1</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  GO-IT 1 lessons (HTML)
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">6</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=B4i-IGwjaI8s"
+                    rel="noopener norefferer nofollow"
+                    >[FSon #66] Модуль 1 Заняття 2</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  GO-IT 2 lessons (HTML)
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">7</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=bn9yIxt_rtg"
+                    rel="noopener norefferer nofollow"
+                    >Модуль 2. Вебинар №3. Основы CSS. Селекторы. Цвет.</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Модуль 2. Вебинар №3. Основы CSS. Селекторы. Цвет. Александр
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">8</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=KM5r3qtBdxY"
+                    rel="noopener norefferer nofollow"
+                    >Модуль 2. Вебинар №4. Оформление текста и шрифты</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Модуль 2. Вебинар №4. Оформление текста и шрифты Александр
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">9</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=KHCnpp7RSfY"
+                    rel="noopener norefferer nofollow"
+                    >Розбір Макету Barbershop (стилі Текст)</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Розбір Макету Barbershop (стилі Текст)
+                </td>
+              </tr>
+
+              <tr class="tabel__list tabel__list--primery">
+                <td class="tabel__item tabel__item--secondary centered">10</td>
+                <td class="tabel__item tabel__item--secondary">
+                  <a
+                    class="tabel__link"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=EVVRPExVA68&t=1s"
+                    rel="noopener norefferer nofollow"
+                    >Розбір Макету Barbershop (About, Prices, Benefits)</a
+                  >
+                </td>
+                <td class="tabel__item tabel__item--secondary">
+                  Розбір Макету Barbershop (About, Prices, Benefits)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
   </body>
 </html>
