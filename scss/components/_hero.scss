@@ -1,54 +1,61 @@
 .hero {
-  padding: 40px 0;
+    padding: 40px 0;
 }
 
 .tabel {
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
 
-  &__title {
-    @include font(26px, 900, 1.7, 0.03em);
-    color: $color-title-table;
+    &__title {
+        @include font(26px, 900, 1.7, 0.03em);
+        color: $color-title-table;
 
-    &--moving-bottom {
-      margin-bottom: 30px;
+        &--moving-bottom {
+            margin-bottom: 30px;
+        }
     }
-  }
 
-  &__head {
-  }
-  &__main {
-  }
-  &__list {
-  }
-  &__item {
+    &__head {
+    }
+
+    &__main {
+
+    }
+
+    &__list {
+    }
+
+    &__item {
     max-width: 400px;
-    &--primery {
-      @include font(18px, 700, 1.7, 0.03em);
+
+        &--primery {
+            @include font(18px, 700, 1.7, 0.03em);
+        }
+
+        &--secondary {
+            @include font(16px, 400, 1.7, 0.03em);
+        }
     }
 
-    &--secondary {
-      @include font(16px, 400, 1.7, 0.03em);
-    }
-  }
+    &__link {
 
-  &__link {
-    &:hover,
-    &:focus {
-      color: $color-hover-link;
+        &:hover,
+        &:focus {
+            color: $color-hover-link;
+        }
     }
-  }
 }
 
 .tabel__item--primery,
 .tabel__item--secondary {
-  border: 2px solid $color-border;
-  padding: 10px;
+    border: 2px solid $color-border;
+    padding: 10px;
 }
 
 .project {
-  &:not(:last-child) {
-    margin-bottom: 40px;
-  }
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
 }
