@@ -2,103 +2,103 @@ header {
 }
 
 .navigation {
-  &__list {
-    @include flex-centered;
-  }
-
-  &__item {
-    padding: 40px 0;
-
-    &:not(:first-child) {
-      margin-left: 30px;
-    }
-  }
-
-  &__link {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 30px;
-
-    @include font(25px, 700, 1.7, 0.03em);
-    color: $color-header-link;
-    background-color: $bgc-header-link;
-
-    transition: transform 250ms linear, background-color 250ms linear;
-
-    &:hover,
-    &:focus {
-      background-color: $bgc-hover-header-link;
-      transition: transform 250ms linear, background-color 250ms linear;
+    &__list {
+        @include flex-centered;
     }
 
-    &--positionsvg {
+    &__item {
+        padding: 40px 0;
+
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
     }
 
-    &--scale {
-      z-index: 99;
-      &:hover,
-      &:focus {
-        transform: scale(1.5);
-      }
+    &__link {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 30px;
+
+        @include font(25px, 700, 1.7, 0.03em);
+        color: $color-header-link;
+        background-color: $bgc-header-link;
+
+        transition: transform 250ms linear, background-color 250ms linear;
+
+        &:hover,
+        &:focus {
+            background-color: $bgc-hover-header-link;
+            transition: transform 250ms linear, background-color 250ms linear;
+        }
+
+        &--positionsvg {
+        }
+
+        &--scale {
+            z-index: 99;
+            &:hover,
+            &:focus {
+                transform: scale(1.5);
+            }
+        }
+
+        &--rotate:hover,
+        &--rotate:focus {
+            transform: rotateX(45deg);
+        }
+
+        &--line {
+            &::before {
+                position: absolute;
+                content: "";
+                bottom: 15px;
+                left: 0;
+                height: 3px;
+                width: 100%;
+                background-color: $bgc-link-before;
+
+                transform: translateX(-100%);
+
+                transition: transform 250ms linear;
+            }
+
+            &:hover::before,
+            &:focus::before {
+                transform: translateX(0);
+            }
+        }
     }
 
-    &--rotate:hover,
-    &--rotate:focus {
-      transform: rotateX(45deg);
-    }
-
-    &--line {
-      &::before {
-        position: absolute;
-        content: "";
-        bottom: 15px;
-        left: 0;
-        height: 3px;
-        width: 100%;
-        background-color: $bgc-link-before;
-
-        transform: translateX(-100%);
-
+    &__svgmovingup {
+        fill: $color-header-link;
+        margin-right: 5px;
+        transform: translateY(-40px);
         transition: transform 250ms linear;
-      }
-
-      &:hover::before,
-      &:focus::before {
-        transform: translateX(0);
-      }
     }
-  }
 
-  &__svgmovingup {
-    fill: $color-header-link;
-    margin-right: 5px;
-    transform: translateY(-40px);
-    transition: transform 250ms linear;
-  }
+    &__svgmovingdown {
+        fill: $color-header-link;
+        position: absolute;
+        top: 50%;
+        left: 20px;
 
-  &__svgmovingdown {
-    fill: $color-header-link;
-    position: absolute;
-    top: 50%;
-    left: 20px;
-
-    transform: translateY(-50%);
-    transition: transform 250ms linear;
-  }
+        transform: translateY(-50%);
+        transition: transform 250ms linear;
+    }
 }
 
 .navigation__link--positionsvg:hover .navigation__svgmovingup,
 .navigation__link--positionsvg:focus .navigation__svgmovingup {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 .navigation__link--positionsvg:hover .navigation__svgmovingdown,
 .navigation__link--positionsvg:focus .navigation__svgmovingdown {
-  transform: translateY(40px);
+    transform: translateY(40px);
 }
 
 .current {
-  background-color: $color-on-state-staige;
+    background-color: $color-on-state-staige;
 }
