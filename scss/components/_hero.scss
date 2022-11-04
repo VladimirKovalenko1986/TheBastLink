@@ -27,6 +27,7 @@
 
     &__item {
         max-width: 400px;
+        transition: background-color 250ms linear, box-shadow 250ms linear;
 
         &--primery {
             @include font(18px, 700, 1.7, 0.03em);
@@ -34,6 +35,14 @@
 
         &--secondary {
             @include font(16px, 400, 1.7, 0.03em);
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $bgc-hover-header-link;
+            box-shadow: 14px 15px 70px 19px rgba(71, 46, 46, 0.71);
+
+            transition: background-color 250ms linear, box-shadow 250ms linear;
         }
     }
 

@@ -81,11 +81,12 @@ picture {
   letter-spacing: 0.03em;
   color: #272c34;
   background-color: #206a97;
-  transition: transform 250ms linear, background-color 250ms linear;
+  transition: transform 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
 }
 .navigation__link:hover, .navigation__link:focus {
   background-color: #fa8072;
-  transition: transform 250ms linear, background-color 250ms linear;
+  box-shadow: 14px 15px 70px 19px rgba(71, 46, 46, 0.71);
+  transition: transform 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
 }
 .navigation__link--scale {
   z-index: 99;
@@ -160,6 +161,7 @@ picture {
 }
 .tabel__item {
   max-width: 400px;
+  transition: background-color 250ms linear, box-shadow 250ms linear;
 }
 .tabel__item--primery {
   font-size: 18px;
@@ -172,6 +174,11 @@ picture {
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.tabel__item:hover, .tabel__item:focus {
+  background-color: #fa8072;
+  box-shadow: 14px 15px 70px 19px rgba(71, 46, 46, 0.71);
+  transition: background-color 250ms linear, box-shadow 250ms linear;
 }
 .tabel__link:hover, .tabel__link:focus {
   color: #ff00ff;

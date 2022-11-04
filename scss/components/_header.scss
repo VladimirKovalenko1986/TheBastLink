@@ -25,12 +25,15 @@ header {
         color: $color-header-link;
         background-color: $bgc-header-link;
 
-        transition: transform 250ms linear, background-color 250ms linear;
+        transition: transform 250ms linear, background-color 250ms linear,
+            box-shadow 250ms linear;
 
         &:hover,
         &:focus {
             background-color: $bgc-hover-header-link;
-            transition: transform 250ms linear, background-color 250ms linear;
+            box-shadow: 14px 15px 70px 19px rgba(71, 46, 46, 0.71);
+            transition: transform 250ms linear, background-color 250ms linear,
+                box-shadow 250ms linear;
         }
 
         &--positionsvg {
