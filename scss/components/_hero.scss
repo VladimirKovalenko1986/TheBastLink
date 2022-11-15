@@ -59,9 +59,3 @@
     border: 2px solid $color-border;
     padding: 10px;
 }
-
-.project {
-    &:not(:last-child) {
-        margin-bottom: 40px;
-    }
-}

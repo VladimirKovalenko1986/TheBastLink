@@ -4,6 +4,7 @@ header {
 .navigation {
     &__list {
         @include flex-centered;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -104,4 +105,11 @@ header {
 
 .current {
     background-color: $color-on-state-staige;
+}
+
+// Conteiner
+.project {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
 }
